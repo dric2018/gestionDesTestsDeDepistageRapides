@@ -1,0 +1,47 @@
+{% extends "./base.html" %}
+
+{% block title %} connexion {% endblock %}
+
+{% block bodyId %} pageDeConnexion {% endblock %}
+
+{% block content %}
+
+<div class="container center">
+
+    <h1 class="center-align teal-text">
+            Authentifiez-vous 
+    </h1>   
+    <div class="row center">
+            <i class="large material-icons teal-text center">lock</i>
+    </div>
+    <img src="../../static/img/sante5.jpg" height="360" width="360" alt="image d'accueil" class="circle"/>
+
+</div>
+
+<div class="container">
+    <form action="connexion" method="POST">
+    {% csrf_token %}
+    <div class="container center">
+            {{ form.as_p }}
+
+    </div>
+        
+        <p class="center">
+            <input type="submit" value="connexion" class="btn teal" style="border-radius:25px;"/>
+            <div class="row center">     
+                <a href="#!">Pas de compte ?</a>
+            </div>
+            <div class="row center">
+                <a href="#!">Nom d'utilisateur ou mot de passe oublié ?</a>   
+            </div>
+    
+        </p>
+    </form>
+       
+</div>
+
+{% endblock content %}
+
+{% block footerContent %} {% endblock %}
+
+

@@ -1,0 +1,239 @@
+{% extends './base.html' %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block bodyId %} Accueil {% endblock %}  
+
+{ %block bodyClass% } scrollspy { %endblock% }">
+
+
+{% block hearderContent %} 
+
+<!---navbar-->
+       
+<nav class="nav-wraper orange darken-3 ">
+    <a href="#" class="brand-logo orange darken-3 " id="logo">
+      <img src="img/logo.png" height="35px" width="35px" alt="" id="logo_civ">
+      <img src="img/01.jpeg" height="35px" width="35px" alt="" id="logo_civ">
+                   e'Depistage
+    </a>
+ 
+        
+    <!--side menu-->
+    <div class="container">
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!">Accueil</a></li>
+        <li><a href="#Nos_services">Nos services</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+        <li><a href="connexion">Connexion</a></li>
+        <li><a href="connexion" class="btn-floating orange darken-2"><i class="material-icons">account_circle</i></a></li>
+      </ul>
+    </div>
+  </nav>   
+ 
+  <ul class="sidenav" id="mobile-links">
+     <li><a href="#!">Accueil</a></li>
+      <li><a href="#Nos_services">Nos services</a></li>
+      <li><a href="#Contacts">Contacts</a></li>
+      <li><a href="connexion">Connexion</a></li>
+      <li><a href="#" class=" center-align"><i class="material-icons ">account_circle</i></a></li>
+      <li><a href="#" ><i class="material-icons">notifications</i></a></li>
+  </ul>
+         <!--section : slider-->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+            <img src="../../static/img/sante1.png" class="responsive-img" alt="">
+               <div class="caption center align">
+                 <h3 class="white-text ">Gestion des TDRs</h3>
+                 <h5 class=" white-text   center">Plateforme de gestion des tests de dépistage rapides</h5>
+               </div>
+         </li>
+         <li>
+                 <img src="../../static/img/materialize.jpeg">
+                 <div class="caption center align">
+                   <h3 class = "white-text">Rapide</h3>
+                   <h5 class=" white-text darken-5 ">Gestion rapide du processus de dépistage</h5>
+                 </div>
+          </li>
+
+          <li>
+                   <img src="../../static/img/sante5.jpg">
+                   <div class="caption center align">
+                     <h3 class = "white-text">Efficace</h3>
+                     <h5 class=" white-text  ">Gestion efficace des procédures</h5>
+                   </div>
+          </li>
+
+                 <li>
+                     <img src="../../static/img/sante4.jpg">
+                     <div class="caption center align">
+                       <h3 class = "teal-text">Sécurisé</h3>
+                       <h5 class=" orange-text ">Faites-nous confiance et vous ne serez point deçus</h5>
+                     </div>
+                   </li>
+
+                   <li>
+                       <img src="../../static/img/materialize.jpeg">
+                       <div class="caption center align">
+                         <h3 class = "orange-text">e'Depistage</h3>
+                         <h5 class=" white-text ">Bienvenue à vous</h5>
+                       </div>
+                   </li>
+
+                     <!--end slider-->
+
+                     
+           </ul>
+         </section>
+
+         <!--section: search-->
+   <section id="search" class="section section-search orange darken-3 white-text center scrollspy">
+      <div class="container">
+          <div class="row">
+              <div class="col s12">
+                 <h3>Recherche</h3>
+                 <div class="input-field">
+                   <input type="text" class="white black-text autocomplete" id="autocomplet-input" placeholder="types de dépistages, centres de dépistage..." style="border-radius:25px;">
+                     <div class="row">
+                       <a href="#!" class="btn teal waves-effect waves-light" style="border-radius:25px;">rechercher</a>
+                     </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="container text-align center">
+        <h3 class="orange-text">e'Dépistage</h3>
+            <p>
+              e'Depistage est une plateforme de gestion des tests de dépoistages rapides. <br> 
+              Nous vous proposons des services de gestion des différents tests de dépistages possibles dans votre région.<br> 
+              Cette application vous permettra de vous informer tant sur les procédures et les prises de rendez-vous pour bénéficier de ces traitements.<br>
+              <p>
+                  <h6 class="orange-text">La première plateforme de gestion des tests de dépistages rapides en Cote d'ivoire.</h6>
+                </p>
+            </p>
+     </div>
+
+{% endblock %}
+  
+  
+{% block content %} 
+    
+    <div class="container center">
+        <h1 class="center-align orange-text">
+          Bienvenue !
+        </h1>
+        <img src="../../static/img/sante4.jpg" height="360" width="360" alt="image d'accueil" class="circle"/>
+      </div>
+
+      <!--section : icons boxes-->
+      <section class="section-icons grey lighten-4 center">
+          <!--cards/buttons-->
+          <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <a href="#">
+                      <div class="card-panel">
+                            <i class="large material-icons orange-text center">today</i>
+                            <h4 class="orange-text">Prendre un rendez-vous  </h4>
+                            <p></p>
+                      </div>
+                    </a>
+                 </div>
+  
+                 <div class="col s12 m4">
+                    <a href="#">
+                      <div class="card-panel">
+                            <i class="large material-icons orange-text center">account_balance</i>
+                            <h4 class="orange-text">Les centres de dépistage</h4>
+                            <p></p>
+                      </div>
+                    </a>
+                 </div>
+  
+                 <div class="col s12 m4">
+                    <a href="#">
+                      <div class="card-panel">
+                            <i class="large material-icons orange-text center">description</i>
+                            <h4 class="orange-text">Les types de dépistage</h4>
+                            <p></p>
+                      </div>
+                    </a>
+                 </div>
+              </div>
+
+                 <div class="row">
+                    <div class="col s12 m4">
+                        <a href="#">
+                          <div class="card-panel">
+                                <i class="large material-icons orange-text center">developer_board</i>
+                                <h4 class="orange-text">Aide</h4>
+                                <p></p>
+                          </div>
+                        </a>
+                     </div>
+      
+                     <div class="col s12 m4">
+                        <a href="#">
+                          <div class="card-panel">
+                                <i class="large material-icons orange-text center">fiber_new</i>
+                                <h4 class="orange-text">Nouveautés</h4>
+                                <p></p>
+                          </div>
+                        </a>
+                     </div>
+      
+                     <div class="col s12 m4">
+                        <a href="#">
+                          <div class="card-panel">
+                                <i class="large material-icons orange-text center">block</i>
+                                <h4 class="orange-text">Pas en service</h4>
+                                <p></p>
+                          </div>
+                        </a>
+                     </div>
+                 </div>
+                 
+  
+  
+            </div>
+              
+        </section>
+
+    {% endblock content %}
+
+ 
+  
+<footer class="page-footer footer-fixed orange darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">e'Depistage</h5>
+          <p class="grey-text text-lighten-4">Cette plateforme vous est proposée par le groupe SR 13.</p>
+        </div>
+        <div class="col l4 offset-l2 s12 orange darken-3">
+          <h5 class="white-text">Les statistiques</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Les statistiques sur le cancer du col de l'utérus</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Les statistiques sur le cancer du sein</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Les statistiques sur le paludisme</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Les statistiques sur le VIH/SIDA</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright orange darken-4">
+      <div class="container">
+      © 2018 Copyright SR13 tous droits réservés
+      <a class="grey-text text-lighten-4 right" href="#!">En savoir plus</a>
+      </div>
+    </div>
+  </footer>
+  
+        
